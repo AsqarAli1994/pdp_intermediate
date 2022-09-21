@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pdp_intermediate/Market.dart';
 import 'package:pdp_intermediate/home_page.dart';
 import 'package:pdp_intermediate/intri_page.dart';
 
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-       home:IntroPage(),
+      debugShowCheckedModeBanner: false,
+       home:Market(),
         routes: {
           HomePage.id:(context)=>HomePage(),
-          IntroPage.id:(context)=> IntroPage()
+          IntroPage.id:(context)=> IntroPage(),
+          Market.id:(context)=> Market()
         },
       );
   }
