@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pdp_intermediate/Hotels.dart';
 import 'package:pdp_intermediate/Market.dart';
 import 'package:pdp_intermediate/home_page.dart';
 import 'package:pdp_intermediate/intri_page.dart';
@@ -14,11 +15,12 @@ class MyApp extends StatelessWidget{
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-       home:Market(),
+       home:Hotels(),
         routes: {
           HomePage.id:(context)=>HomePage(),
           IntroPage.id:(context)=> IntroPage(),
-          Market.id:(context)=> Market()
+          Market.id:(context)=> Market(),
+          Hotels.id:(context)=>Hotels()
         },
       );
   }
